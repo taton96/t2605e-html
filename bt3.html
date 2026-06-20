@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employment Separation Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef4f4;
+}
+
+.header{
+    width:100%;
+    background:#5eb7c8;
+    padding:25px;
+    text-align:center;
+}
+
+.header h1{
+    color:white;
+    font-size:36px;
+    font-weight:300;
+}
+
+.container{
+    width:70%;
+    margin:40px auto;
+}
+
+label{
+    display:block;
+    margin:20px 0 8px;
+    font-weight:bold;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+.row input{
+    width:50%;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #8ebcc6;
+    border-radius:3px;
+}
+
+.radio-box{
+    border:1px solid #8ebcc6;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:3px;
+}
+
+.radio-box input{
+    width:auto;
+    margin-right:10px;
+}
+
+textarea{
+    resize:none;
+}
+
+.button{
+    text-align:center;
+    margin-top:30px;
+}
+
+button{
+    background:#43b4ca;
+    color:white;
+    border:none;
+    padding:12px 35px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>Employment Separation Form</h1>
+</div>
+
+<div class="container">
+
+<form>
+
+<label>Full Name</label>
+<div class="row">
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+</div>
+
+<label>Employee ID</label>
+<input type="text">
+
+<label>Personal Email</label>
+<input type="email">
+
+<label>Last Working Date</label>
+<input type="date">
+
+<label>Reason for Departure</label>
+<input type="text">
+
+<label>Return of All Company Property</label>
+
+<div class="radio-box">
+    <input type="radio" name="property"> Yes
+</div>
+
+<div class="radio-box">
+    <input type="radio" name="property"> No
+</div>
+
+<div class="radio-box">
+    <input type="radio" name="property"> Other
+</div>
+
+<label>Exit Interview Schedule</label>
+<input type="datetime-local">
+
+<label>Comments / Feedback</label>
+<textarea rows="6"></textarea>
+
+<div class="button">
+    <button type="submit">Submit</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
